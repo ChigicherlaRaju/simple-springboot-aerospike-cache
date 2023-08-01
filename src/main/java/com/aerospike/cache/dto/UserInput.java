@@ -1,7 +1,8 @@
-package com.aerospike.cache.objects;
+package com.aerospike.cache.dto;
+
+import java.io.Serializable;
 
 import org.springframework.data.aerospike.mapping.Document;
-import org.springframework.data.annotation.Id;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,10 +14,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class User {
-	@Id
-	private int id;
+public class UserInput implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
 	private String name;
 	private String email;
 	private int age;
+
 }
