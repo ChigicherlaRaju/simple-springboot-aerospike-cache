@@ -10,14 +10,10 @@ import lombok.Data;
 @ConfigurationProperties(prefix = "aerospike")
 public class AerospikeConfigurationProperties {
 	
-	private String host;
-	
-	private int port;
-	
-	private String schema;
-	
-	private int schemaTtl;
-	
+	private String host;	
+	private int port;	
+	private String schema;	
+	private int schemaTtl;	
 	private int ttl;
 
 }
